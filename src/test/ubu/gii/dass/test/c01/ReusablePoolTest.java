@@ -50,10 +50,16 @@ public class ReusablePoolTest {
 
 	/**
 	 * Test method for {@link ubu.gii.dass.c01.ReusablePool#acquireReusable()}.
+	 * @throws NotFreeInstanceException 
 	 */
-	@Test
-	public void testAcquireReusable() {
-		fail("Not yet implemented");
+	@Test(expected = NotFreeInstanceException.class)
+	public void testAcquireReusable() throws NotFreeInstanceException {
+		Reusable reusable1 = pool.acquireReusable();
+		Reusable reusable2 = pool.acquireReusable();
+		//No son el mismo objeto
+		assertNotEquals(reusable1, reusable2);
+		//Debe lanzar la excepción NotFreeInstanceException.
+		Reusable reusable3 = pool.acquireReusable();	
 	}
 
 	/**
@@ -61,7 +67,7 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testReleaseReusable() {
-		fail("Not yet implemented");
+//		fail("Not yet implemented");
 	}
 
 }
