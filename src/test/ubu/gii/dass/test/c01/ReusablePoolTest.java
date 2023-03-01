@@ -58,7 +58,7 @@ public class ReusablePoolTest {
 		Reusable reusable2 = pool.acquireReusable();
 		//No son el mismo objeto
 		assertNotEquals(reusable1, reusable2);
-		//Debe lanzar la excepción NotFreeInstanceException.
+		//Debe lanzar la excepcion NotFreeInstanceException.
 		Reusable reusable3 = pool.acquireReusable();	
 	}
 
