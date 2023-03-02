@@ -12,11 +12,6 @@ poolobject
 
 
 Autores:
-[author]
-@author
-[![author]
-[![@author]
-[@author]
 Juan Romera Pérez
 Luis Sáez López
 Álvaro Vázquez Suárez
@@ -38,6 +33,7 @@ El proceso de desarrollo de la batería de pruebas se va a gestionar utilizando 
   6. Verificar el resultado de las pruebas en el pipeline de integración continua y cómo la calidad del producto va mejorando con las sucesivas integraciones.
 
 Preguntas: (justificándolas con indicadores obtenidos a través de herramientas propuestas)
+
 ¿Se ha realizado trabajo en equipo?
 
 ¿Tiene calidad el conjunto de pruebas disponibles?
@@ -45,3 +41,6 @@ Preguntas: (justificándolas con indicadores obtenidos a través de herramientas
 ¿Cuál es el esfuerzo invertido en realizar la actividad?
 
 ¿Cuál es el número de fallos encontrados en el código?
+
+https://codecov.io/gh/lsl1005/poolobject/branch/master/graphs/icicle.svg?token=97NWKQFP2T
+[![codecov](https://codecov.io/gh/lsl1005/poolobject/branch/master/graph/badge.svg?token=97NWKQFP2T)](https://codecov.io/gh/lsl1005/poolobject/branch/master/graphs/icicle.svg?token=97NWKQFP2T)
