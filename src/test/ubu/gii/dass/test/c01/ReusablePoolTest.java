@@ -48,10 +48,8 @@ public class ReusablePoolTest {
 		pool = ReusablePool.getInstance();		
 		//Comprobamos que el objeto no es nulo tras obtener el pool de objetos.
 		assertNotNull(pool);
-//		// Objeto es instancia de ReusablePool.
-//		assertTrue(pool instanceof ReusablePool);
-		//Dummy
-		assertTrue(true);
+		//Comprobamos que el Objeto es instancia de ReusablePool.
+		assertTrue(pool instanceof ReusablePool);
 	}
 
 	/**
