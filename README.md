@@ -42,5 +42,4 @@ Preguntas: (justificándolas con indicadores obtenidos a través de herramientas
 
 ¿Cuál es el número de fallos encontrados en el código?
 
-https://codecov.io/gh/lsl1005/poolobject/branch/master/graphs/icicle.svg?token=97NWKQFP2T
-[![codecov](https://codecov.io/gh/lsl1005/poolobject/branch/master/graph/badge.svg?token=97NWKQFP2T)](https://codecov.io/gh/lsl1005/poolobject/branch/master/graphs/icicle.svg?token=97NWKQFP2T)
+![info](https://codecov.io/gh/lsl1005/poolobject/branch/master/graphs/icicle.svg?token=97NWKQFP2T)
