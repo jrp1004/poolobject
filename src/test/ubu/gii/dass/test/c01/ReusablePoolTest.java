@@ -27,6 +27,7 @@ public class ReusablePoolTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
+		System.out.println("Setting it up!");
 		pool = ReusablePool.getInstance();
 	}
 
@@ -35,6 +36,7 @@ public class ReusablePoolTest {
 	 */
 	@After
 	public void tearDown() throws Exception {
+		System.out.println("Tearing it down!");
 		pool = null;
 	}
 
@@ -43,9 +45,7 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testGetInstance() {
-		//Comprobamos que el objeto esta vacío antes de obtener el pool de objetos.
-		assertNull(pool);
-		pool = ReusablePool.getInstance();		
+		System.out.println("Running: testGetInstance");
 		//Comprobamos que el objeto no es nulo tras obtener el pool de objetos.
 		assertNotNull(pool);
 		//Comprobamos que el Objeto es instancia de ReusablePool.
@@ -58,6 +58,7 @@ public class ReusablePoolTest {
 	 */
 //	@Test(expected = NotFreeInstanceException.class)
 	public void testAcquireReusable() throws NotFreeInstanceException {
+		System.out.println("Running: testAcquireReusable");
 		//Comprobamos que el objeto esta vacío antes de obtener el reusable del pool de objetos.
 		assertNull(r1);
 		//Comprobamos que el objeto esta vacío antes de obtener el reusable del pool de objetos.
@@ -89,6 +90,7 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testReleaseReusable() {
+		System.out.println("Running: testReleaseReusable");
 		//Dummy
 		assertTrue(true);
 	}
