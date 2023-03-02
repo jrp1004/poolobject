@@ -43,14 +43,23 @@ Preguntas: (justificándolas con indicadores obtenidos a través de herramientas
 
 ¿Se ha realizado trabajo en equipo?
 
+Comprobamos los [commits](https://github.com/lsl1005/poolobject/commits/master) para ello.
+
 ¿Tiene calidad el conjunto de pruebas disponibles?
 
 Podemos ver que parte del código ha sido abarcada en las pruebas:
 
 ![info](https://codecov.io/gh/lsl1005/poolobject/branch/master/graphs/icicle.svg?token=97NWKQFP2T)
 
+![info](https://codecov.io/gh/lsl1005/poolobject/branch/master/graphs/tree.svg?token=97NWKQFP2T)
+
+![info](https://codecov.io/gh/lsl1005/poolobject/branch/master/graphs/sunburst.svg?token=97NWKQFP2T)
+
+
 ¿Cuál es el esfuerzo invertido en realizar la actividad?
+
+Unas 7-8 horas. Adjunto imagen.
 
 ¿Cuál es el número de fallos encontrados en el código?
 
-
+A mi parecer, las pruebas unitarias no deberian depender de las pruebas anteriores, así que es un fallo usar una instancia estática.
