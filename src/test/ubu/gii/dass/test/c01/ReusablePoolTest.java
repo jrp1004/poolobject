@@ -123,6 +123,15 @@ public class ReusablePoolTest {
 		} catch (NotFreeInstanceException e) {
 			fail("se lanzo la excepción inesperadamente");
 		}
+		try {
+			//devolvemos dos veces al pool
+			pool.releaseReusable(r3);
+			pool.releaseReusable(r3);
+			fail("se devuelve dos veces al pool");
+		} catch (DuplicatedInstanceException e) {
+			//La excepción capturada es de tipo DuplicatedInstanceException
+			assertTrue(e instanceof DuplicatedInstanceException);
+		}
 	}
 
 }
