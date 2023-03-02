@@ -45,9 +45,9 @@ Preguntas: (justificándolas con indicadores obtenidos a través de herramientas
 
 Comprobamos los [commits](https://github.com/lsl1005/poolobject/commits/master) para ello.
 
-[img1](img/1.png)
+![img1](img/1.png)
 
-[img3](img/3.png)
+![img3](img/3.png)
 
 ¿Tiene calidad el conjunto de pruebas disponibles?
 
@@ -55,7 +55,7 @@ La función cliente solo contiene el main, por lo que no tiene sentido comprobar
 
 De ReusablePoolTest solo quedan sin cubrir las excepciones o ausencia de las mismas.
 
-[img4](img/4.png)
+![img4](img/4.png)
 
 Podemos ver que parte del código ha sido abarcada en las pruebas:
 
@@ -67,8 +67,8 @@ Podemos ver que parte del código ha sido abarcada en las pruebas:
 
 Unas 7-8 horas.
 
-[img2](img/2.png)
-[img5](img/5.png)
+![img2](img/2.png)
+![img5](img/5.png)
 
 
 ¿Cuál es el número de fallos encontrados en el código?
