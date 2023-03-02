@@ -64,15 +64,15 @@ public class ReusablePoolTest {
 		System.out.println("Running: testAcquireReusable");
 		//Comprobamos que el objeto no es nulo.
 		assertNotNull(pool);
-		//Comprobamos que el objeto esta vacío antes de obtener el reusable del pool de objetos.
+		//Comprobamos que el objeto esta vacio antes de obtener el reusable del pool de objetos.
 		assertNull(r1);
-		//Comprobamos que el objeto esta vacío antes de obtener el reusable del pool de objetos.
+		//Comprobamos que el objeto esta vacio antes de obtener el reusable del pool de objetos.
 		assertNull(r2);
 		r1 = pool.acquireReusable();
 		r2 = pool.acquireReusable();
-		//Comprobamos que el objeto no esta vacío tras obtener el reusable del pool de objetos.
+		//Comprobamos que el objeto no esta vacio tras obtener el reusable del pool de objetos.
 		assertNotNull(r1);
-		//Comprobamos que el objeto no esta vacío tras obtener el reusable del pool de objetos.
+		//Comprobamos que el objeto no esta vacio tras obtener el reusable del pool de objetos.
 		assertNotNull(r2);		
 		//Comprobamos que el Objeto es instancia de Reusable.
 		assertTrue(r1 instanceof Reusable);
@@ -83,9 +83,9 @@ public class ReusablePoolTest {
 		try {
 			//Debe lanzar la excepcion NotFreeInstanceException.
 			r3 = pool.acquireReusable();
-			fail("no se lanzo la excepción");			
+			fail("no se lanzo la excepcion");			
 		} catch (NotFreeInstanceException e) {
-			//La excepción capturada es ded tipo NotFreeInstanceException
+			//La excepcion capturada es ded tipo NotFreeInstanceException
 			assertTrue(e instanceof NotFreeInstanceException);
 		}
 	}
@@ -100,15 +100,15 @@ public class ReusablePoolTest {
 		System.out.println("Running: testReleaseReusable");
 		//Comprobamos que el objeto no es nulo.
 		assertNotNull(pool);
-		//Comprobamos que el objeto esta vacío antes de obtener el reusable del pool de objetos.
+		//Comprobamos que el objeto esta vacio antes de obtener el reusable del pool de objetos.
 		assertNull(r1);
-		//Comprobamos que el objeto esta vacío antes de obtener el reusable del pool de objetos.
+		//Comprobamos que el objeto esta vacio antes de obtener el reusable del pool de objetos.
 		assertNull(r2);
 		r1 = pool.acquireReusable();
 		r2 = pool.acquireReusable();
-		//Comprobamos que el objeto no esta vacío tras obtener el reusable del pool de objetos.
+		//Comprobamos que el objeto no esta vacio tras obtener el reusable del pool de objetos.
 		assertNotNull(r1);
-		//Comprobamos que el objeto no esta vacío tras obtener el reusable del pool de objetos.
+		//Comprobamos que el objeto no esta vacio tras obtener el reusable del pool de objetos.
 		assertNotNull(r2);		
 		//Comprobamos que el Objeto es instancia de Reusable.
 		assertTrue(r1 instanceof Reusable);
@@ -125,7 +125,7 @@ public class ReusablePoolTest {
 			//Comprobamos que no son el mismo objeto.		
 			assertNotEquals(r1, r2);
 		} catch (NotFreeInstanceException e) {
-			fail("se lanzo la excepción inesperadamente");
+			fail("se lanzo la excepcion inesperadamente");
 		}
 		try {
 			//devolvemos dos veces al pool
@@ -133,7 +133,7 @@ public class ReusablePoolTest {
 			pool.releaseReusable(r3);
 			fail("se devuelve dos veces al pool");
 		} catch (DuplicatedInstanceException e) {
-			//La excepción capturada es de tipo DuplicatedInstanceException
+			//La excepcion capturada es de tipo DuplicatedInstanceException
 			assertTrue(e instanceof DuplicatedInstanceException);
 			// devolvemos r2
 			pool.releaseReusable(r2);
