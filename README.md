@@ -1,3 +1,12 @@
+## Estadísticas de Cobertura
+
+- Autores: $CODECOV_YAML.authors
+- Commits: $CODECOV_YAML.commits
+- Errores: $CODECOV_YAML.errors
+- Cobertura: $CODECOV_YAML.coverage
+- Fallos: $CODECOV_YAML.failures
+- Tiempo empleado: $CODECOV_YAML.duration
+
 - Los documentos tienen que ser entregados tanto el repositorio como en un fichero en UBUVirtual.
 
 Informe de la actividad del proceso de prueba y de cobertura de las mismas con el formato según:
