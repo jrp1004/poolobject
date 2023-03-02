@@ -16,8 +16,11 @@ import ubu.gii.dass.c01.*;
  *
  */
 public class ReusablePoolTest {
-	
-	private ReusablePool pool;
+	/**
+	 * variables a utilizar durante las pruebas.
+	 */
+	private ReusablePool pool = null;
+	private Reusable r1, r2, r3 = null;
 
 	/**
 	 * @throws java.lang.Exception
