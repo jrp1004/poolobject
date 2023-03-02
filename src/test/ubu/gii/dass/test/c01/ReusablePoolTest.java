@@ -135,6 +135,8 @@ public class ReusablePoolTest {
 		} catch (DuplicatedInstanceException e) {
 			//La excepción capturada es de tipo DuplicatedInstanceException
 			assertTrue(e instanceof DuplicatedInstanceException);
+			// devolvemos r2
+			pool.releaseReusable(r2);
 		}
 	}
 
