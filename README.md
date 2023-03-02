@@ -3,10 +3,13 @@ poolobject
 [![codecov](https://codecov.io/gh/lsl1005/poolobject/branch/master/graph/badge.svg?token=97NWKQFP2T)](https://codecov.io/gh/lsl1005/poolobject)
 [![Java CI](https://github.com/lsl1005/poolobject/actions/workflows/ci.yml/badge.svg)](https://github.com/lsl1005/poolobject/actions/workflows/ci.yml)
 
-##Autores:
-1.Juan Romera Pérez
-2.Luis Sáez López
-3.Álvaro Vázquez Suárez
+## Autores:
+
+1. Juan Romera Pérez
+
+2. Luis Sáez López
+
+3. Álvaro Vázquez Suárez
 
 Enunciado:
 
@@ -14,9 +17,13 @@ En la práctica se va simular un pequeño desarrollo de un producto software par
 El objetivo es establecer un caso de estudio que sirva para caracterizar y evaluar tanto el producto desarrollado como el proceso seguido.
 
 (a) Descripción del producto
+
 Dado un código de ejemplo del patrón diseño creacional Pool Object, se debe crear una batería de pruebas tal que las coberturas de sus clases sean del 100%. El código de las clases se puede obtener en el repositorio https://github.com/clopezno/poolobject. La batería de pruebas JUnit debe estar contenida en la clase ubu.gii.dass.test.c01.ReuseblePoolTest.java.
+
 (b) Descripción del proceso
+
 El proceso de desarrollo de la batería de pruebas se va a gestionar utilizando el control de versiones del sistema Git proporcionado por el repositorio de proyectos GitHub (https://github.com ). Los pasos para gestionar el procesos son los siguientes:
+
   1. Cada miembro del equipo tiene que estar registrado en GitHub, Travis CI (opcional se puede sustituir por Github actions) y Codecov.io.
   2. Uno de los miembros tiene que realizar un fork del repositorio donde se encuentra el código que se quiere probar https://github.com/clopezno/poolobject. El nuevo repositorio tiene que ser público.
   3. Invitar al resto de miembros del equipo para que puedan participar en el desarrollo del conjunto de pruebas.
@@ -29,7 +36,9 @@ Preguntas: (justificándolas con indicadores obtenidos a través de herramientas
 ¿Se ha realizado trabajo en equipo?
 
 ¿Tiene calidad el conjunto de pruebas disponibles?
+
 Podemos ver que parte del código ha sido abarcada en las pruebas:
+
 ![info](https://codecov.io/gh/lsl1005/poolobject/branch/master/graphs/icicle.svg?token=97NWKQFP2T)
 
 ¿Cuál es el esfuerzo invertido en realizar la actividad?
