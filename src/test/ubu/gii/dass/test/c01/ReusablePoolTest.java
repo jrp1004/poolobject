@@ -72,8 +72,8 @@ public class ReusablePoolTest {
 		assertTrue(r1 instanceof Reusable);
 		//Comprobamos que el Objeto es instancia de Reusable.
 		assertTrue(r2 instanceof Reusable);
-		//No son el mismo objeto
-//		assertNotEquals(r1, r2);
+		//Comprobamos que no son el mismo objeto.		
+		assertNotEquals(r1, r2);
 //		//Debe lanzar la excepcion NotFreeInstanceException.
 //		Reusable reusable3 = pool.acquireReusable();	
 		
