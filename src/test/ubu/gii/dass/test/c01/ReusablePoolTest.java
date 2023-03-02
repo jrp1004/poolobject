@@ -50,12 +50,16 @@ public class ReusablePoolTest {
 		assertNotNull(pool);
 		//Comprobamos que el Objeto es instancia de ReusablePool.
 		assertTrue(pool instanceof ReusablePool);
+		ReusablePool pool2 = ReusablePool.getInstance();
+		//Comprobamos que el Objeto es instancia de ReusablePool.
+		assertTrue(pool2 instanceof ReusablePool);
 	}
 
 	/**
 	 * Test method for {@link ubu.gii.dass.c01.ReusablePool#acquireReusable()}.
 	 * @throws NotFreeInstanceException 
 	 */
+	@Test
 	public void testAcquireReusable() throws NotFreeInstanceException {
 		System.out.println("Running: testAcquireReusable");
 		//Comprobamos que el objeto no es nulo.
