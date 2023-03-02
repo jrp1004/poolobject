@@ -67,7 +67,11 @@ public class ReusablePoolTest {
 		//Comprobamos que el objeto no esta vacío tras obtener el reusable del pool de objetos.
 		assertNotNull(r1);
 		//Comprobamos que el objeto no esta vacío tras obtener el reusable del pool de objetos.
-		assertNotNull(r2);
+		assertNotNull(r2);		
+		//Comprobamos que el Objeto es instancia de Reusable.
+		assertTrue(r1 instanceof Reusable);
+		//Comprobamos que el Objeto es instancia de Reusable.
+		assertTrue(r2 instanceof Reusable);
 		//No son el mismo objeto
 //		assertNotEquals(r1, r2);
 //		//Debe lanzar la excepcion NotFreeInstanceException.
