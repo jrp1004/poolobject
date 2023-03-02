@@ -14,6 +14,17 @@ codecov:
           target: 65%
           threshold: 1.5%
           base: auto
+  parsers:
+    java:
+      detect_packages: true
+      detect_classes: true
+      detect_methods: true
+      detect_annotations: true
+      detect_constructors: true
+      detect_fields: true
+      author:
+        enabled: yes
+        email: yes
   comment:
     layout: "reach,diff,flags,files"
     behavior: default
