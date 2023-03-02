@@ -43,6 +43,8 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testGetInstance() {
+		//Comprobamos que el objeto esta vacío antes de obtener el pool de objetos.
+		assertNull(pool);
 //		ReusablePool pool = ReusablePool.getInstance();
 //		
 //		// Objeto no nulo.
