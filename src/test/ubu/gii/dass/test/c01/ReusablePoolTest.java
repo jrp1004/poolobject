@@ -5,9 +5,12 @@ package ubu.gii.dass.test.c01;
 
 import static org.junit.Assert.*;
 
+import org.hamcrest.CoreMatchers;
+import org.hamcrest.core.StringContains;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.matchers.JUnitMatchers;
 
 import ubu.gii.dass.c01.*;
 
@@ -70,6 +73,8 @@ public class ReusablePoolTest {
 		assertNull(r2);
 		r1 = pool.acquireReusable();
 		r2 = pool.acquireReusable();
+		//Comprobamos que el mensaje es correcto
+		assertThat(r1.util(), CoreMatchers.containsString("Uso del objeto Reutilizable"));
 		//Comprobamos que el objeto no esta vacio tras obtener el reusable del pool de objetos.
 		assertNotNull(r1);
 		//Comprobamos que el objeto no esta vacio tras obtener el reusable del pool de objetos.
