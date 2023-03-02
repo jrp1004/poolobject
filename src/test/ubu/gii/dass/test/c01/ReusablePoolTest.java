@@ -6,12 +6,9 @@ package ubu.gii.dass.test.c01;
 import static org.junit.Assert.*;
 
 import org.hamcrest.CoreMatchers;
-import org.hamcrest.core.StringContains;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.matchers.JUnitMatchers;
-
 import ubu.gii.dass.c01.*;
 
 /**
@@ -144,5 +141,4 @@ public class ReusablePoolTest {
 			pool.releaseReusable(r2);
 		}
 	}
-
 }
