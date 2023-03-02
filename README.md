@@ -45,20 +45,31 @@ Preguntas: (justificándolas con indicadores obtenidos a través de herramientas
 
 Comprobamos los [commits](https://github.com/lsl1005/poolobject/commits/master) para ello.
 
+[img1](img/1.png)
+
+[img3](img/3.png)
+
 ¿Tiene calidad el conjunto de pruebas disponibles?
+
+La función cliente solo contiene el main, por lo que no tiene sentido comprobar el método main.
+
+De ReusablePoolTest solo quedan sin cubrir las excepciones o ausencia de las mismas.
+
+[img4](img/4.png)
 
 Podemos ver que parte del código ha sido abarcada en las pruebas:
 
-![info](https://codecov.io/gh/lsl1005/poolobject/branch/master/graphs/icicle.svg?token=97NWKQFP2T)
 
 ![info](https://codecov.io/gh/lsl1005/poolobject/branch/master/graphs/tree.svg?token=97NWKQFP2T)
-
-![info](https://codecov.io/gh/lsl1005/poolobject/branch/master/graphs/sunburst.svg?token=97NWKQFP2T)
 
 
 ¿Cuál es el esfuerzo invertido en realizar la actividad?
 
-Unas 7-8 horas. Adjunto imagen.
+Unas 7-8 horas.
+
+[img2](img/2.png)
+[img5](img/5.png)
+
 
 ¿Cuál es el número de fallos encontrados en el código?
 
