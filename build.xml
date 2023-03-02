@@ -66,6 +66,9 @@
       </structure>
       <html destdir="report"/>
       <xml destfile="report.xml"/>
+	  <author>
+		<format property="coverage.author.format" value="%a"/>
+	   </author>
     </jacoco:report>
   </target>
   <target name="dist" depends="compile" description="generate the distribution">
