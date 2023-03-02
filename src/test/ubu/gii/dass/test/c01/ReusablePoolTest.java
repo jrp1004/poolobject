@@ -58,10 +58,18 @@ public class ReusablePoolTest {
 	 */
 //	@Test(expected = NotFreeInstanceException.class)
 	public void testAcquireReusable() throws NotFreeInstanceException {
-//		Reusable reusable1 = pool.acquireReusable();
-//		Reusable reusable2 = pool.acquireReusable();
-//		//No son el mismo objeto
-//		assertNotEquals(reusable1, reusable2);
+		//Comprobamos que el objeto esta vacío antes de obtener el reusable del pool de objetos.
+		assertNull(r1);
+		//Comprobamos que el objeto esta vacío antes de obtener el reusable del pool de objetos.
+		assertNull(r2);
+		r1 = pool.acquireReusable();
+		r2 = pool.acquireReusable();
+		//Comprobamos que el objeto no esta vacío tras obtener el reusable del pool de objetos.
+		assertNotNull(r1);
+		//Comprobamos que el objeto no esta vacío tras obtener el reusable del pool de objetos.
+		assertNotNull(r2);
+		//No son el mismo objeto
+//		assertNotEquals(r1, r2);
 //		//Debe lanzar la excepcion NotFreeInstanceException.
 //		Reusable reusable3 = pool.acquireReusable();	
 		
