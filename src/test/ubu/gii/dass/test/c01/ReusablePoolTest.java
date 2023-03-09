@@ -45,14 +45,14 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testGetInstance() {
-		System.out.println("Running: testGetInstance");
-		//Comprobamos que el objeto no es nulo.
+		ReusablePool pool = ReusablePool.getInstance();
+		
+		// Objeto no nulo.
 		assertNotNull(pool);
-		//Comprobamos que el Objeto es instancia de ReusablePool.
+		// Objeto es instancia de ReusablePool.
 		assertTrue(pool instanceof ReusablePool);
-		ReusablePool pool2 = ReusablePool.getInstance();
-		//Comprobamos que el Objeto es instancia de ReusablePool.
-		assertTrue(pool2 instanceof ReusablePool);
+		//Misma instancia
+		assertEquals(this.pool,pool);
 	}
 
 	/**
