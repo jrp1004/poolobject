@@ -1,4 +1,4 @@
-<project  name="PoolObjectPattern" default="dist" basedir="." xmlns:jacoco="antlib:org.jacoco.ant" xmlns:sonar="antlib:org.sonar.ant">
+<project  name="PoolObjectPattern" default="dist" basedir="." xmlns:jacoco="antlib:org.jacoco.ant">
   <description>
     Practica 1 de desarrollo avanzado de sistemas software 
   </description>
@@ -7,14 +7,6 @@
   <property name="test.build.dir" value="build/test"/>
   <property name="test.src.dir" value="src/test"/>
   <property name="dist" location="dist"/>
-  
-  <property name="sonar.projectKey" value="poolobject" />
-  <property name="sonar.projectName" value="Example of SonarScanner for Ant Usage" />
-  <property name="sonar.host.url" value="http://localhost:9000"/>
-  <property name="sonar.login" value="${{secrets.SONAR_TOKEN}}"/>
-  <property name="sonar.sources" value="src" />
-  <property name="sonar.java.binaries" value="build" />
-  <property name="sonar.java.libraries" value="lib/*.jar" />
 
   <path id="classpath.test">
     <pathelement location="lib/junit-4.12.jar"/>
@@ -90,10 +82,5 @@
     <delete dir="${dist}"/>
     <delete dir="report"/>
     <delete file="jacoco.exec"/>
-  </target>
-  
-  <target name="sonar">
-    <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml"/>
-    <sonar:sonar />
   </target>
 </project>
